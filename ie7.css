@@ -1,0 +1,152 @@
+/**** Sitio Web ****/
+body {  
+	background-image: url(img/fondito3.png);
+	font-family: arial, helvetica, sans-serif;
+	margin: 0px auto;  
+	padding: 0px;	
+	color: #333; 
+	text-align: center;  
+	font-size: 14px; 
+	line-height: 140%;
+}
+
+#contenedor {
+	margin: 0px auto;  
+	width: 590px;
+	position:relative;
+}
+
+#contenido {
+	background: white; 
+	margin: 40px 0 40px 0; 
+	border: 1px solid #999; 
+	clear: both; 
+	padding: 15px 25px 85px 15px; 
+	-moz-box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 1px; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.95) 1px 1px 1px; 
+	border-bottom: 1px solid #999; 
+	-webkit-border-radius:5px; 
+	-moz-border-radius: 5px;
+}
+
+#bloque-imagen {
+	float: left;
+	width: auto;
+}
+
+#bloque-imagen2 {
+	float: left;
+	margin-left: 6px;
+	
+}
+
+#footer {
+	clear: both;
+	width: 100%;
+	height: 129px;
+	background: transparent url('img/bgfoo.png') repeat-x top right;
+	text-align: center;
+
+}
+
+.logo {
+	padding: 10px 0;
+}
+
+div, img, form, ul, td, th {
+	margin: 0px; 
+	padding: 0px; 
+	border: 0px; 
+	text-align: left;
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+
+h3 {
+	color: #666666;
+	text-shadow: 0 0 1px #999999;
+}
+
+.explicacion ul
+{
+  list-style:inside circle;
+  margin-bottom:10px;
+  margin-left: 20px;
+}
+
+pre { 
+	margin: 10px 0px; 
+	padding: 0; 
+}
+
+code { 
+	display: block; 
+	background-color: #F7F4DD; 
+	padding: 10px; 
+	overflow: auto; 
+}
+
+.clearfix:after, .container:after {
+	content:"\0020"; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden; 
+	overflow:hidden;
+}
+
+.clearfix, .container {
+	display:block;
+}
+
+.clear {
+	clear:both;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+
+
+/**** Choco-Slider ****/
+
+.choco-contenedor {
+	margin-bottom: 50px;
+}
+
+#control
+{
+  margin: 10px auto 0 auto;
+  position: relative;
+  float: right;
+}
+
+#control a
+{
+  text-transform:uppercase;
+  text-decoration:none;
+  height:20px;
+  width:18px;
+  display:block;
+  cursor: pointer;
+  background: transparent url(img/controlls.gif) center bottom no-repeat;
+  float:left;
+  outline: none;
+}
+
+#control a.active
+{
+  background: transparent url(img/controlls.gif) center top no-repeat;
+}
+
+#control a span
+{
+  visibility:hidden;
+}

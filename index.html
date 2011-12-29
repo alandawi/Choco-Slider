@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Choco-Slider | A very tasty jQuery Plugin</title>
+
+<meta name="description" content="Choco-Slider, a very tasty jQuery Plugin." />
+<meta name="author" content="Alan Dawidowicz" />
+<meta name="keywords" content="jquery plugin, slideshow, image slider, slider, chocolate, tasty, chocoslider, choco, alandawi" />
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+
+<script src="js/jquery.chocoslider.js" type="text/javascript"></script>
+
+
+<link rel="shortcut icon" href="favicon.ico" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
+
+<!--[if IE 7]>
+ <link rel="stylesheet" type="text/css" media="screen" href="ie7.css" />
+<![endif]-->
+
+
+<script type="text/javascript">
+$(window).load(function() {
+	$('#slider').chocoslider();
+});
+</script>
+
+
+</head>
+<body>
+
+<div id="contenedor">
+<div id="contenido" class="clearfix">
+
+    <div id="header">
+        <img src="img/header2.png" alt="Choco-Slider" />
+    </div>
+
+
+
+    <div id="slider">
+        <a href="#"><img src="img/img_1.jpg" alt="Foto 1" title="Choco-Slider solo pesa 7kb." /></a>
+        
+        <a href="#"><img src="img/img_2.jpg" alt="Foto 2" /></a>
+        
+        <a href="#"><img src="img/img_3.jpg" alt="Foto 3" title="Choco-Slider se encuentra liberado bajo la MIT Licence." /></a>
+        
+        <a href="#"><img src="img/img_4.jpg" alt="Foto 4" /></a>
+        
+        <a href="#"><img src="img/img_5.jpg" alt="Foto 5" title="Choco-Slider es compatible con todos los navegadores de hoy en dia." /></a>
+    </div>
+
+    
+    <div class="explicacion">
+    <img src="img/titulo_caracteristicas.png" alt="Caracteristicas" />
+        <ul>
+            <li>Liviano</li>
+            <li>Flexible</li>
+            <li>Personalizable</li>
+            <li>Liberado bajo MIT licence</li>
+            <li>Compatible con Firefox 2+, IE 6+, Safari v4, Opera v10, Google Chrome 3+ y Opera 9+</li>
+        </ul>
+	</div>
+    
+<br />   
+    
+<div class="explicacion">
+		<img src="img/titulo_implementacion.png" alt="Implementacion" />
+        <p>Descargue los archivos del Choco-Slider (Javascript y CSS). Una vez hecho eso, incl&uacute;yalos en el sitio, junto a la librer&iacute;a jQuery:</p>
+
+<pre>
+<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;chocoslider.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery.chocoslider.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code>
+</pre>
+		
+        <p>Agregue el siguiente contenedor, modifique las im&aacute;genes, su alt y su t&iacute;tulo correspondiente:</p>
+        
+<pre>
+<code>&lt;div id=&quot;slider&quot;&gt;
+	&lt;img src=&quot;img/img_1.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
+	&lt;img src=&quot;img/img_2.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
+	&lt;img src=&quot;img/img_3.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
+	&lt;img src=&quot;img/img_4.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
+	&lt;img src=&quot;img/img_5.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
+&lt;/div&gt;</code>
+</pre>
+
+		<p>Agregue lo siguiente antes del cierre del &lt;/head&gt; para llamar al Choco-Slider:</p>
+        
+<pre>
+<code>&lt;script type=&quot;text/javascript&quot;&gt;
+  $(window).load(function() {
+  	$('#slider').chocoslider();
+  });
+&lt;/script&gt;</code>
+</pre>        
+
+	</div>
+    
+<br />    
+    
+        <div class="explicacion">
+		<img src="img/titulo_personalizacion.png" alt="Personalizacion" />
+        <p>En caso de que no personalice las opciones, autom&aacute;ticamente se van a usar las opciones por defecto:</p>
+
+<pre><code>auto:true, (si queremos autom&aacute;tico el slider)<br />
+autoPause:true,	(para detener el slider luego de hacer click)<br />
+speedStrip:500, (Velocidad entre las tiras)<br />
+effect:'random', (Hay tres tipos: effect1, effect2 y random)<br />
+numberStrips:15, (cantidad de tiras a mostrar)<br />
+sliderDelay:3000, (tiempo de retraso entre la transici&oacute;n de im&aacute;genes)<br />
+transparencytitle:0.8, (Transparencia del t&iacute;tulo)<br />
+bChange: function(){}, (funci&oacute;n necesaria para finalizar)<br />
+aChange: function(){}, (funci&oacute;n necesaria para finalizar)<br />
+chocoEnd: function(){}, (funci&oacute;n necesaria para finalizar)<br />
+controlNavigation:true (Si se quita solo se mostrar&aacute;n las im&aacute;genes)
+</code></pre>
+
+	</div>
+    
+<br />    
+    
+        <div class="explicacion">
+		<img src="img/titulo_ejemplos.png" alt="Ejemplos" />
+        <p>Ejemplo N&ordm; 1:</p>
+
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  $(window).load(function() {
+  	$('#slider').chocoslider();
+		auto:true,
+		autoPause:true,	 
+		speedStrip:500,	 
+		effect:'effect1',
+		numberStrips:15,
+		sliderDelay:3000,
+		transparencytitle:0.8,
+		bChange: function(){},
+		aChange: function(){},
+		chocoEnd: function(){},
+		controlNavigation:true
+  });
+&lt;/script&gt;
+</code></pre>
+
+<br />
+
+		<p>Ejemplo N&ordm; 2:</p>
+
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  $(window).load(function() {
+  	$('#slider').chocoslider();
+		auto:true,
+		autoPause:false,	 
+		speedStrip:500,	 
+		effect:'random',
+		numberStrips:15,
+		sliderDelay:6000,
+		transparencytitle:1.0,
+		bChange: function(){},
+		aChange: function(){},
+		chocoEnd: function(){},
+		controlNavigation:false
+  });
+&lt;/script&gt;
+</code></pre>
+
+	</div>
+        
+<br />    
+    
+    <div class="explicacion">
+		<img src="img/titulo_postre.png" alt="El Postre" />
+        <div id="bloque-imagen">
+        	<a href="choco_slider_v2.rar"><img src="img/descarga.png" alt="Descargar" /></a>
+        </div>
+        
+        <div id="bloque-imagen2">
+        	<a href="index_en.html"><img src="img/idioma.png" alt="Idioma" /></a>
+        </div>
+
+	</div>
+    
+    <!--[if IE 7]>
+ 	<br /><br />
+	<![endif]-->
+    
+
+</div>
+</div>
+<div id="footer"></div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12965236-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
