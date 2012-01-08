@@ -1,209 +1,206 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Choco-Slider | A very tasty jQuery Plugin</title>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Choco-Slider | A very tasty jQuery Plugin</title>
 
-<meta name="description" content="Choco-Slider, a very tasty jQuery Plugin." />
-<meta name="author" content="Alan Dawidowicz" />
-<meta name="keywords" content="jquery plugin, slideshow, image slider, slider, chocolate, tasty, chocoslider, choco, alandawi" />
+    <meta name="description" content="Choco-Slider, a very tasty jQuery Plugin.">
+    <meta name="author" content="Alan Dawidowicz">
+    <meta name="keywords" content="jquery plugin, slideshow, image slider, slider, chocolate, tasty, chocoslider, choco, alandawi">
 
+    <link rel="shortcut icon" href="favicon.ico">
 
-<link rel="shortcut icon" href="favicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
 
-<link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
+    <!--[if IE 7]>
+     <link rel="stylesheet" type="text/css" media="screen" href="ie7.css">
+    <![endif]-->
 
-<!--[if IE 7]>
- <link rel="stylesheet" type="text/css" media="screen" href="ie7.css" />
-<![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.chocoslider.js" type="text/javascript"></script>
 
-<script src="js/jquery.chocoslider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+      $('#slider').chocoslider();
+    });
+    </script>
+  </head>
+  <body>
 
-<script type="text/javascript">
-$(window).load(function() {
-	$('#slider').chocoslider();
-});
-</script>
+    <div id="contenedor">
+      <div id="contenido" class="clearfix">
 
+        <div id="header">
+            <img src="img/header2.png" alt="Choco-Slider">
+        </div>
 
-</head>
-<body>
-
-<div id="contenedor">
-<div id="contenido" class="clearfix">
-
-    <div id="header">
-        <img src="img/header2.png" alt="Choco-Slider" />
-    </div>
-
-
-    <div id="slider">
-        <a href="#"><img src="img/img_1.jpg" alt="Foto 1" title="Choco-Slider weighs only 7kb." /></a>
-        
-        <a href="#"><img src="img/img_2.jpg" alt="Foto 2" /></a>
-        
-        <a href="#"><img src="img/img_3.jpg" alt="Foto 3" title="Choco-Slider se encuentra liberado bajo la MIT Licence." /></a>
-        
-        <a href="#"><img src="img/img_4.jpg" alt="Foto 4" /></a>
-        
-        <a href="#"><img src="img/img_5.jpg" alt="Foto 5" title="Choco-Slider is compatible with all browsers today." /></a>
-    </div>
+        <div id="slider">
+            <a href="#"><img src="img/img_1.jpg" alt="Foto 1" title="Choco-Slider weighs only 7kb."></a>
+            <a href="#"><img src="img/img_2.jpg" alt="Foto 2" title=""></a>
+            <a href="#"><img src="img/img_3.jpg" alt="Foto 3" title="Choco-Slider se encuentra liberado bajo la MIT Licence."></a>
+            <a href="#"><img src="img/img_4.jpg" alt="Foto 4" title=""></a>
+            <a href="#"><img src="img/img_5.jpg" alt="Foto 5" title="Choco-Slider is compatible with all browsers today."></a>
+        </div>
     
-    
-    
-    <div class="explicacion">
-    <img src="img/img_en/tittle_features.png" alt="Caracteristicas" />
-        <ul>
+        <div class="explicacion">
+          <div class="titulo">Features:</div>
+          <br><br><br>
+          
+          <ul>
             <li>Lightweight</li>
             <li>Flexible</li>
             <li>Customizable</li>
             <li>Released under MIT license</li>
             <li>Compatible with Firefox 2 +, IE 6 +, Safari v4, Google Chrome 3 + and Opera 9 +</li>
-        </ul>
-	</div>
+          </ul>
+        </div>
     
-<br />   
-    
-<div class="explicacion">
-		<img src="img/img_en/tittle_implementation.png" alt="Implementacion" />
-        <p>Download the Choco-Slider (Javascript and CSS). Having done so, include them and the jQuery library on the site:</p>
-
-<pre>
-<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;chocoslider.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;jquery.chocoslider.js&quot;&gt;&lt;/script&gt;<br />
-&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code>
-</pre>
-		
-        <p>Add the next container, edit images, alt and title your question:</p>
-        
-<pre>
-<code>&lt;div id=&quot;slider&quot;&gt;
-	&lt;img src=&quot;img/img_1.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
-	&lt;img src=&quot;img/img_2.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
-	&lt;img src=&quot;img/img_3.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
-	&lt;img src=&quot;img/img_4.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
-	&lt;img src=&quot;img/img_5.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
-&lt;/div&gt;</code>
-</pre>
-
-		<p>Add the following before the closing &lt;/ head&gt; to call Choco-Slider:</p>
-        
-<pre>
-<code>&lt;script type=&quot;text/javascript&quot;&gt;
-  $(window).load(function() {
-  	$('#slider').chocoslider();
-  });
-&lt;/script&gt;</code>
-</pre>        
-
-	</div>
-    
-<br />    
+        <br>
     
         <div class="explicacion">
-		<img src="img/img_en/tittle_customization.png" alt="Personalizacion" />
-        <p>In case you do not customize the options, it automatically will use the default options:</p>
+          <div class="titulo">Implementation:</div>
+          <br><br><br>
 
-<pre><code>auto:true, (if you want automatic slider)<br />
-autoPause:true,	(to stop the slider after clicking)<br />
-speedStrip:500, (Speed between the strips)<br />
-effect:'random', (There are three types: effect1, effect2 and random)<br />
-numberStrips:15, (number of strips to show)<br />
-sliderDelay:3000, (time delay between images transition)<br />
-transparencytitle:0.8, (Transparency of the title)<br />
-bChange: function(){}, (function necessary to complete)<br />
-aChange: function(){}, (function necessary to complete)<br />
-chocoEnd: function(){}, (function necessary to complete)<br />
+          <p>Download the Choco-Slider (Javascript and CSS). Having done so, include them and the jQuery library on the site:</p>
+
+          <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;chocoslider.css&quot; type=&quot;text/css&quot; /&gt;<br>
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery.chocoslider.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code>
+          </pre>
+
+          <p>Add the next container, edit images, alt and title your question:</p>
+
+          <pre><code>&lt;div id=&quot;slider&quot;&gt;
+  &lt;img src=&quot;img/img_1.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
+  &lt;img src=&quot;img/img_2.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
+  &lt;img src=&quot;img/img_3.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
+  &lt;img src=&quot;img/img_4.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
+  &lt;img src=&quot;img/img_5.jpg&quot; alt=&quot;&quot; title=&quot;&quot;/&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <p>Add the following before the closing &lt;/ head&gt; to call Choco-Slider:</p>
+        
+          <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  $(window).load(function() {
+    $('#slider').chocoslider();
+  });
+&lt;/script&gt;
+</code></pre>
+
+        </div>
+
+        <br>
+
+        <div class="explicacion">
+          <div class="titulo">Customization:</div>
+          <br><br><br>
+          
+          <p>In case you do not customize the options, it automatically will use the default options:</p>
+
+          <pre><code>auto:true, (if you want automatic slider)<br>
+autoPause:true, (to stop the slider after clicking)<br>
+speedStrip:500, (Speed between the strips)<br>
+effect:'random', (There are three types: 'slide', 'fade' and 'random')<br>
+numberStrips:15, (number of strips to show)<br>
+sliderDelay:3000, (time delay between images transition)<br>
+transparencytitle:0.8, (Transparency of the title)<br>
+bChange: function(){}, (function necessary to complete)<br>
+aChange: function(){}, (function necessary to complete)<br>
+chocoEnd: function(){}, (function necessary to complete)<br>
 controlNavigation:true (Removing only show images)
 </code></pre>
 
-	</div>
-    
-<br />    
-    
+        </div>
+
+        <br>
+
         <div class="explicacion">
-		<img src="img/img_en/tittle_examples.png" alt="Ejemplos" />
-        <p>Example N&ordm; 1:</p>
+          <div class="titulo">Examples:</div>
+          <br><br><br>
+          
+          <p>Example N&ordm; 1:</p>
 
-<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+          <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
   $(window).load(function() {
-  	$('#slider').chocoslider();
-		auto:true,
-		autoPause:true,	 
-		speedStrip:500,	 
-		effect:'effect1',
-		numberStrips:15,
-		sliderDelay:3000,
-		transparencytitle:0.8,
-		bChange: function(){},
-		aChange: function(){},
-		chocoEnd: function(){},
-		controlNavigation:true
+    $('#slider').chocoslider({
+      auto:true,
+      autoPause:true,
+      speedStrip:500,
+      effect:'effect1',
+      numberStrips:15,
+      sliderDelay:3000,
+      transparencytitle:0.8,
+      bChange: function(){},
+      aChange: function(){},
+      chocoEnd: function(){},
+      controlNavigation:true
+    });
   });
 &lt;/script&gt;
 </code></pre>
 
-<br />
+          <br>
 
-		<p>Example N&ordm; 2:</p>
+          <p>Example N&ordm; 2:</p>
 
-<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+          <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
   $(window).load(function() {
-  	$('#slider').chocoslider();
-		auto:true,
-		autoPause:false,	 
-		speedStrip:500,	 
-		effect:'random',
-		numberStrips:15,
-		sliderDelay:6000,
-		transparencytitle:1.0,
-		bChange: function(){},
-		aChange: function(){},
-		chocoEnd: function(){},
-		controlNavigation:false
+    $('#slider').chocoslider({
+      auto:true,
+      autoPause:false,
+      speedStrip:500,
+      effect:'random',
+      numberStrips:15,
+      sliderDelay:6000,
+      transparencytitle:1.0,
+      bChange: function(){},
+      aChange: function(){},
+      chocoEnd: function(){},
+      controlNavigation:false
+    });
   });
 &lt;/script&gt;
-</code></pre>
+  </code></pre>
 
-	</div>
-        
-<br />    
-    
-    <div class="explicacion">
-		<img src="img/img_en/tittle_dessert.png" alt="El Postre" />
-        <div id="bloque-imagen">
-        	<a href="choco_slider_v2.rar"><img src="img/img_en/download.png" alt="Download" /></a>
         </div>
         
-        <div id="bloque-imagen2">
-        	<a href="index.html"><img src="img/img_en/language.png" alt="Language" /></a>
+        <br>
+
+        <div class="explicacion">
+          <div class="titulo">Dessert:</div>
+          <br><br><br>
+          
+          <div id="bloque-imagen">
+            <a href="choco_slider_v2.rar"><img src="img/img_en/download.png" alt="Download"></a>
+          </div>
+
+          <div id="bloque-imagen2">
+            <a href="index.html"><img src="img/img_en/language.png" alt="Language"></a>
+          </div>
         </div>
 
-	</div>
-    
-    <!--[if IE 7]>
- 	<br /><br />
-	<![endif]-->
-    
+        <!--[if IE 7]>
+        <br><br>
+        <![endif]-->
 
-</div>
-</div>
-<div id="footer"></div>
+      </div>
+    </div>
+    <div id="footer"></div>
 
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-12965236-2']);
-  _gaq.push(['_trackPageview']);
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-12965236-2']);
+      _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
 
-</body>
+  </body>
 </html>
